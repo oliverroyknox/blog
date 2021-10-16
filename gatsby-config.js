@@ -3,5 +3,14 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "blog",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "articles",
+        path: `${__dirname}/src/articles`,
+      }
+    },
+    "gatsby-transformer-remark",
+  ],
 };
