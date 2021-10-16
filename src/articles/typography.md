@@ -22,8 +22,15 @@ Regular
 
 ***Bold Italic***
 
-`code`
+`code snippet`
 
-```bash
+```shell
 code block
+```
+
+```json
+{
+    "array": [ "element" ],
+    "number": 42,
+}
 ```
