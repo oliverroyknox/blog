@@ -1,8 +1,8 @@
 {
   "name": "blog",
   "version": "1.0.0",
-  "private": true,
-  "description": "blog",
+  "private": false,
+  "description": "A development blog to host statically generated articles, regarding my future projects.",
   "author": "Oliver Knox",
   "keywords": [
     "gatsby"
