@@ -8,10 +8,21 @@ div.flex-container {
     align-items: center;
     justify-content: center;
 
-    margin: 32px 0;
+    margin: 32px 16px;
 }
 
 div.flex-container > div.flex-content {
-    max-width: 50%;
     width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    div.flex-container > div.flex-content {
+        max-width: 75%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    div.flex-container > div.flex-content {
+        max-width: 50%;
+    }
 }
