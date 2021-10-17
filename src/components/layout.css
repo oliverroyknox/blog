@@ -13,21 +13,46 @@ div.flex-container {
     align-items: center;
     justify-content: center;
 
-    margin: 32px 16px;
+    padding: 16px 0;
 }
 
 div.flex-container > div.flex-content {
-    width: 100%;
+    width: 88%;
 }
 
 @media screen and (min-width: 768px) {
     div.flex-container > div.flex-content {
-        max-width: 75%;
+        max-width: 66%;
     }
 }
 
 @media screen and (min-width: 1600px) {
     div.flex-container > div.flex-content {
-        max-width: 50%;
+        max-width: 44%;
+    }
+}
+
+p {
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: 256px;
+
+    border-radius: 6px;
+
+    object-fit: cover;   
+}
+
+@media screen and (min-height: 1024px) {
+    img {
+        height: 512px;
+    }
+}
+
+@media screen and (min-height: 1280px) {
+    img {
+        height: 700px;
     }
 }
