@@ -8,8 +8,8 @@ export default function ArticlePage({data}) {
 
     return (
       <Layout>
-        <div className="article">
-          <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="flex-container">
+          <div className="flex-content" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </Layout>
     )
