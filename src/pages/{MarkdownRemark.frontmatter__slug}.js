@@ -1,6 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
+import "../components/prism-one-light.scss";
+import "../components/prism-one-dark.scss";
 
 export default function ArticlePage({data}) {
     const { markdownRemark } = data;
