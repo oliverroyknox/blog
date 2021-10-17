@@ -3,11 +3,13 @@
 
     --header-color: rgba(37, 37, 43);
     --text-color: rgba(56, 58, 66);
+    --text-color-raw: 171, 178, 191;
 }
 
 .dark {
-    --background-color: rgba(32, 36, 44);
+    --background-color: rgb(35, 37, 45);
 
     --header-color: rgba(228, 238, 255);
     --text-color: rgba(171, 178, 191);
+    --text-color-raw: 171, 178, 191;
 }

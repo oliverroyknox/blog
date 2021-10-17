@@ -9,37 +9,41 @@ h5,
 h6 {
     color: var(--header-color);
     letter-spacing: -0.02em;
-    margin: 16px 0;
 }
 
 h1 {
-    font-weight: 900;
+    font-weight: 600;
     font-size: 2.25rem;
+
+    margin: 2rem 0 1rem 0;
 }
 
 h2 {
-    font-weight: 800;
-    font-size: 1.75rem;
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    margin: 4rem 0 2rem 0;
 }
 
 h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.1125rem;
+
+    margin: 2rem 1rem;
 }
 
 h4 {
-    font-weight: 600;
-    font-size: 1.44rem;
+    font-weight: 500;
+    font-size: 1rem;
+
+    margin: 0rem 2rem;
 }
 
-h5 {
-    font-weight: 600;
-    font-size: 1.33rem;
-}
+h5, h6 {
+    font-weight: 400;
+    font-size: 1rem;
 
-h6 {
-    font-weight: 600;
-    font-size: 1.22rem;
+    margin: 0rem 3rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -48,23 +52,38 @@ h6 {
     }
 
     h2 {
-        font-size: 2.75rem;
+        font-size: 1.75rem;
     }
 
     h3 {
-        font-size: 2.25rem;
+        font-size: 1.125rem;
     }
 
-    h4 {
-        font-size: 2rem;
-    }
-
-    h5 {
-        font-size: 1.5rem;
-    }
-
-    h6 {
-        font-size: 1.25rem;
+    h4, h5, h6 {
+        font-size: 1rem;
     }
 }
 
+p {
+    display: block;
+    flex-direction: column;
+    margin: 0 1rem;
+
+    line-height: 1.75rem;
+}
+
+h3 + p {
+    margin: 0 2rem;
+}
+
+h4 + p {
+    margin: 0 3rem;
+}
+
+h5 + p {
+    margin: 0 4rem;
+}
+
+h6 + p {
+    margin: 0 5rem;
+}
