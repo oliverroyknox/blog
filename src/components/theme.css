@@ -1,0 +1,13 @@
+.light {
+    --background-color: rgba(255, 255, 255, 1);
+
+    --header-color: rgb(37, 37, 43);
+    --text-color: rgb(56, 58, 66);
+}
+
+.dark {
+    --background-color: rgb(32, 36, 44);
+
+    --header-color: rgb(228, 238, 255);
+    --text-color: rgba(171, 178, 191, 1);
+}
