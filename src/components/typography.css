@@ -67,17 +67,3 @@ h6 {
     }
 }
 
-pre,
-code {
-    font-family: "Source Code Pro", "Courier New", Courier, monospace; 
-}
-
-pre {
-    display: flex;
-    padding: 1rem;
-
-    background: #f2f2f2;
-    border-radius: 6px; 
-
-    overflow-x: auto;
-}
