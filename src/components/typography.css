@@ -9,41 +9,84 @@ h5,
 h6 {
     color: var(--header-color);
     letter-spacing: -0.02em;
+
+    max-width: max-content;
+    width: 75%;
+    position: relative;
+}
+
+h1::before, 
+h1::after,
+h2::before, 
+h2::after, 
+h3::before, 
+h3::after {
+    content: "";
+    position: absolute;
+    border-radius: 1px;
+}
+
+h1::before, h1::after, h2::before, h2::after, h3::before, h3::after {
+    top: -0.5rem;
+    left: -1rem;
+    bottom: -0.5rem;
+    right: -1rem;
+}
+
+h1::before, h2::before, h3::before {
+    background: #2d3139;
+    transform: rotate(-1deg);
+    z-index: -1;
+
+    transition: all 300ms ease;
+}
+
+h1:hover::before, h2:hover::before, h3:hover::before {
+    transform: rotate(-1.5deg);
+}
+
+h1::after, h2::after, h3::after {
+    transform: rotate(-1.5deg) translate(1.25rem, 0.75rem);
+    z-index: -2;
+
+    transition: all 300ms ease;
+}
+
+h1::after {
+    background: #f70067;
+}
+
+h2::after {
+    background: #006eff;
+}
+
+h3::after {
+    background: #f7ca00;
+}
+
+h1:hover::after, h2:hover::after, h3:hover::after  {
+    transform: rotate(-1deg) translate(1rem, 0.5rem);
 }
 
 h1 {
     font-weight: 600;
-    font-size: 2.25rem;
+    font-size: 1.45rem;
 
-    margin: 2rem 0 1rem 0;
+    margin: 4rem 1rem 3rem;
 }
 
 h2 {
     font-weight: 600;
     font-size: 1.125rem;
 
-    margin: 4rem 0 2rem 0;
+    margin: 6rem 1rem 2rem;
 }
 
 h3 {
     font-weight: 500;
     font-size: 1.1125rem;
 
-    margin: 2rem 1rem;
-}
-
-h4 {
-    font-weight: 500;
-    font-size: 1rem;
-
-    margin: 0rem 2rem;
-}
-
-h5, h6 {
-    font-weight: 400;
-    font-size: 1rem;
-
-    margin: 0rem 3rem;
+    margin: 3rem 2rem 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -58,10 +101,6 @@ h5, h6 {
     h3 {
         font-size: 1.125rem;
     }
-
-    h4, h5, h6 {
-        font-size: 1rem;
-    }
 }
 
 p {
@@ -74,16 +113,4 @@ p {
 
 h3 + p {
     margin: 0 2rem;
-}
-
-h4 + p {
-    margin: 0 3rem;
-}
-
-h5 + p {
-    margin: 0 4rem;
-}
-
-h6 + p {
-    margin: 0 5rem;
 }
