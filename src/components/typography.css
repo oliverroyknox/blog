@@ -70,7 +70,7 @@ h1:hover::after, h2:hover::after, h3:hover::after  {
 
 h1 {
     font-weight: 600;
-    font-size: 1.45rem;
+    font-size: 1.75rem;
 
     margin: 4rem 1rem 3rem;
 }
@@ -89,7 +89,7 @@ h3 {
     margin: 3rem 2rem 2rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 810px) {
     h1 {
         font-size: 3.5rem;
     }
@@ -100,6 +100,20 @@ h3 {
 
     h3 {
         font-size: 1.125rem;
+    }
+}
+
+@media screen and (min-width: 2048px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
     }
 }
 

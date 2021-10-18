@@ -20,13 +20,13 @@ div.flex-container > div.flex-content {
     width: 88%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     div.flex-container > div.flex-content {
         max-width: 66%;
     }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 2048px) {
     div.flex-container > div.flex-content {
         max-width: 44%;
     }
@@ -36,7 +36,7 @@ img {
     width: 100%;
     height: 256px;
 
-    border-radius: 6px;
+    border-radius: 4px;
 
     object-fit: cover;   
 
@@ -57,7 +57,7 @@ img {
 
 hr {
     border: 1px solid var(--text-color);
-    border-radius: 6px;
+    border-radius: 2px;
 
     /* margin-bottom: 4rem; */
 }
@@ -88,52 +88,44 @@ table th, table td {
 }
 
 table tr th {
-    background: var(--text-color);
-    color: var(--background-color);
-}
-
-table th:not(:last-child) {
-    border-right: 1px solid var(--background-color);
+    background: rgb(0, 226, 170);
+    color: #2d3139;
 }
 
 table td:not(:last-child) {
     border-right: 1px solid rgba(var(--text-color-raw), 0.1);
 }
 
-table tr:not(:last-child) td {
-    border-bottom: 1px solid rgba(171, 178, 191, 0.1);
-}
-
 table tr td:first-child {
-    border-left: 1px solid var(--text-color);
+    border-left: 2px solid rgb(0, 255, 170);
 }
 
 table tr td:last-child {
-    border-right: 1px solid var(--text-color);;
+    border-right: 2px solid rgb(0, 255, 170);
 }
 
 table tr:last-child td {
-    border-bottom: 1px solid var(--text-color);;
+    border-bottom: 2px solid rgb(0, 255, 170);
 }
 
 /* top-left border-radius */
 table tr:first-child th:first-child {
-    border-top-left-radius: 4px;
+    border-top-left-radius: 2px;
 }
 
 /* top-right border-radius */
 table tr:first-child th:last-child {
-    border-top-right-radius: 4px;
+    border-top-right-radius: 2px;
 }
 
 /* bottom-left border-radius */
 table tr:last-child td:first-child {
-    border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 2px;
 }
 
 /* bottom-right border-radius */
 table tr:last-child td:last-child {
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 2px;
 }
 
 ul {

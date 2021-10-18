@@ -3,7 +3,7 @@ slug: "markdown-syntax"
 ---
 
 # Markdown Syntax
-**16th October 2021**
+**16th October 2021 -** ***2 min read***
 
 ![A retro-looking camera](https://images.unsplash.com/photo-1612547036242-77002603e5aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80 "Polaroid Land Camera")
 
