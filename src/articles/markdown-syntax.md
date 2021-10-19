@@ -9,11 +9,18 @@ slug: "markdown-syntax"
 
 ## Tables tables and more tables... 
 
+<br />
+
+This is a table.
+
 | Header 1 | Header 2 | Header 3 |
 | -- | -- | -- |
 | Arthur | Betty | Chris |
 | Danielle | Esteban | Francesca |
 | Geoff | Hannah | Izzy |
+| Lando | Charles | Lance |
+
+Tables are also a useful data structure.
 
 ## List
 
@@ -40,6 +47,10 @@ This text is **bold**. This text is *itallic*. This text is ***bold & itallic***
 This text is **bold**. This text is *itallic*. This text is ***bold & itallic***
 
 ## Code
+
+<br />
+
+This is a code block.
 
 ```javascript
 function hello() {

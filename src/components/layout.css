@@ -80,6 +80,10 @@ table {
     margin: 1rem;
 
     width: calc(100% - 2rem);
+
+    overflow-x: scroll;
+    text-overflow:clip;
+    white-space: nowrap;
 }
 
 table th, table td {
@@ -87,45 +91,55 @@ table th, table td {
     text-align: left;
 }
 
-table tr th {
-    background: rgb(0, 226, 170);
-    color: #2d3139;
+table tr td {
+    border-left: 4px solid var(--table-accent-color);
 }
 
-table td:not(:last-child) {
-    border-right: 1px solid rgba(var(--text-color-raw), 0.1);
-}
-
-table tr td:first-child {
-    border-left: 2px solid rgb(0, 255, 170);
-}
-
-table tr td:last-child {
-    border-right: 2px solid rgb(0, 255, 170);
+table tr:first-child td {
+    border-top-left-radius: 4px;
 }
 
 table tr:last-child td {
-    border-bottom: 2px solid rgb(0, 255, 170);
+    border-bottom-left-radius: 4px;
 }
 
-/* top-left border-radius */
-table tr:first-child th:first-child {
-    border-top-left-radius: 2px;
-}
+@media screen and (max-width: 600px) {
+    table thead {
+        display: none;
+    }
 
-/* top-right border-radius */
-table tr:first-child th:last-child {
-    border-top-right-radius: 2px;
-}
+    table tr {
+        display: block;
+        margin-bottom: 2rem;
+    }
 
-/* bottom-left border-radius */
-table tr:last-child td:first-child {
-    border-bottom-left-radius: 2px;
-}
+    table tr td {
+        display: block;
+        text-align: right;
+    }
 
-/* bottom-right border-radius */
-table tr:last-child td:last-child {
-    border-bottom-right-radius: 2px;
+    table tr:first-child td, table tr:last-child td {
+        border-radius: 0;
+    }
+
+    table tr td:first-child {
+        border-top-left-radius: 4px;
+    }
+
+    table tr td:last-child {
+        border-bottom-left-radius: 4px;
+    }
+
+    table tr td::before {
+    /*
+        aria-label has no advantage, it won't be read inside a table. 
+        content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        color: var(--header-color);
+        font-weight: bold;
+    }
 }
 
 ul {

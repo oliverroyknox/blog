@@ -1,15 +1,29 @@
 .light {
-    --background-color: rgba(255, 255, 255);
+    --background-color: rgb(255, 255, 255);
 
-    --header-color: rgba(37, 37, 43);
-    --text-color: rgba(56, 58, 66);
-    --text-color-raw: 171, 178, 191;
+    --header-color: rgb(37, 37, 43);
+    --header-contrast-color: rgb(241,241,241);
+
+    --text-color: rgb(56, 58, 66);
+
+    --primary-color: rgb(247,0,103);
+    --secondary-color: rgb(0,110,255);
+    --tertiary-color: rgb(247,202,0);
+
+    --table-accent-color: rgb(0, 219, 146);
 }
 
 .dark {
     --background-color: rgb(35, 37, 45);
 
-    --header-color: rgba(228, 238, 255);
-    --text-color: rgba(171, 178, 191);
-    --text-color-raw: 171, 178, 191;
+    --header-color: rgb(228, 238, 255);
+    --header-contrast-color: rgb(45,49,57);
+
+    --text-color: rgb(188, 196, 209);
+
+    --primary-color: rgb(247,0,103);
+    --secondary-color: rgb(0,110,255);
+    --tertiary-color: rgb(247,202,0);
+
+    --table-accent-color: rgb(0, 219, 146);
 }

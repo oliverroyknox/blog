@@ -3,10 +3,7 @@
 
 h1,
 h2,
-h3, 
-h4, 
-h5,
-h6 {
+h3 {
     color: var(--header-color);
     letter-spacing: -0.02em;
 
@@ -34,7 +31,7 @@ h1::before, h1::after, h2::before, h2::after, h3::before, h3::after {
 }
 
 h1::before, h2::before, h3::before {
-    background: #2d3139;
+    background: var(--header-contrast-color);
     transform: rotate(-1deg);
     z-index: -1;
 
@@ -89,6 +86,11 @@ h3 {
     margin: 3rem 2rem 2rem;
 }
 
+table tr th {
+    color: var(--header-color);
+    font-size: 1.1125rem;
+}
+
 @media screen and (min-width: 810px) {
     h1 {
         font-size: 3.5rem;
@@ -98,7 +100,7 @@ h3 {
         font-size: 1.75rem;
     }
 
-    h3 {
+    h3, table tr th {
         font-size: 1.125rem;
     }
 }
@@ -112,7 +114,7 @@ h3 {
         font-size: 2rem;
     }
 
-    h3 {
+    h3, table tr th {
         font-size: 1.5rem;
     }
 }
