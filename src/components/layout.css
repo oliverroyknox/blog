@@ -39,8 +39,6 @@ img {
     border-radius: 4px;
 
     object-fit: cover;   
-
-    margin: 4rem 0 2rem 0;
 }
 
 @media screen and (min-height: 1024px) {
