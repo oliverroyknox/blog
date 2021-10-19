@@ -12,8 +12,6 @@ div.flex-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    padding: 16px 0;
 }
 
 div.flex-container > div.flex-content {
@@ -90,7 +88,7 @@ table th, table td {
 }
 
 table tr td {
-    border-left: 4px solid var(--table-accent-color);
+    border-left: 4px solid var(--quaternary-color);
 }
 
 table tr:first-child td {

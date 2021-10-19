@@ -9,8 +9,7 @@
     --primary-color: rgb(247,0,103);
     --secondary-color: rgb(0,110,255);
     --tertiary-color: rgb(247,202,0);
-
-    --table-accent-color: rgb(0, 219, 146);
+    --quaternary-color: rgb(0, 219, 146);
 }
 
 .dark {
@@ -24,6 +23,5 @@
     --primary-color: rgb(247,0,103);
     --secondary-color: rgb(0,110,255);
     --tertiary-color: rgb(247,202,0);
-
-    --table-accent-color: rgb(0, 219, 146);
+    --quaternary-color: rgb(0, 219, 146);
 }
