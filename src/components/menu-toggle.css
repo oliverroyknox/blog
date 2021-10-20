@@ -1,0 +1,58 @@
+:root {
+    --hamburger-width: 1.25rem;
+    --line-height: 0.15rem;
+}
+
+span.hamburger {
+    width: var(--hamburger-width);
+    height: calc(var(--hamburger-width) * 0.75);
+    
+    position: relative;
+    cursor: pointer;
+    transition: 300ms all ease;
+}
+
+span.line {
+    display: block;
+    position: absolute;
+    height: var(--line-height);
+    width: 100%;
+    background: var(--header-color);
+    border-radius: 4px;
+    opacity: 1;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    transition: 150ms all ease;
+}
+
+span.line:nth-of-type(1) {
+    top: calc(var(--hamburger-width) * 0);
+}
+
+span.line:nth-of-type(2), span.line:nth-of-type(3) {
+    top: calc(var(--hamburger-width) * 0.33);
+}
+
+span.line:nth-of-type(4) {
+    top: calc(var(--hamburger-width) * 0.66);
+}
+
+span.hamburger.menu span.line:nth-of-type(1) {
+    width: 0%;
+    left: 50%;
+}
+
+span.hamburger.menu span.line:nth-of-type(2) {
+    transform: rotate(45deg);
+}
+
+span.hamburger.menu span.line:nth-of-type(3) {
+    transform: rotate(-45deg);
+}
+
+span.hamburger.menu span.line:nth-of-type(4) {
+    width: 0%;
+    left: 50%;
+}
