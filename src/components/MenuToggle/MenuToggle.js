@@ -1,5 +1,5 @@
 import React from "react";
-import "./menu-toggle.css";
+import "./MenuToggle.css";
 
 export default function MenuToggle({ignore}) {
     if (!ignore) ignore = [];

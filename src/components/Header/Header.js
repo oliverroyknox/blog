@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, navigate } from "gatsby";
-import ThemeToggle from "./ThemeToggle";
-import MenuToggle from "./MenuToggle";
-import "./header.css";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import MenuToggle from "../MenuToggle/MenuToggle";
+import "./Header.css";
 
 export default function Header() {
     const toHome = () => navigate("/");

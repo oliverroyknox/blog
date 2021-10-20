@@ -1,5 +1,5 @@
 import React from "react";
-import "./theme-toggle.css";
+import "./ThemeToggle.css";
 
 export default function ThemeToggle() {
     const toggle = (e) => { 

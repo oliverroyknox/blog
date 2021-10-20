@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
+import Layout from "../components/Layout/Layout";
 
 export default function ArticlePage({data}) {
     const { markdownRemark } = data;
