@@ -25,3 +25,7 @@
     --tertiary-color: rgb(247,202,0);
     --quaternary-color: rgb(0, 219, 146);
 }
+
+.transition, .transition *  {
+    transition: all 300ms ease 0ms !important;
+}

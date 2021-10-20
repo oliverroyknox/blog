@@ -1,0 +1,103 @@
+:root {
+    --satellite-size: 0.75rem;
+}
+
+span.satellite {
+	position: relative;
+
+    width: var(--satellite-size);
+	height: var(--satellite-size);
+    
+	background: var(--header-color);
+	border-radius: 50%;
+
+    cursor: pointer;
+	
+	transition: all 150ms ease 150ms;
+
+    display: inline-block;
+}
+
+span.cutout {
+    position: absolute;
+
+	width: var(--satellite-size);
+	height: var(--satellite-size);
+
+    background: var(--background-color);
+	border-radius: 50%;
+
+    z-index: 1;
+	transform: translate(-8rem, 0);
+	opacity: 0;
+	
+	transition: transform 150ms ease 150ms;
+}
+
+span.ray {
+	width: calc(var(--satellite-size) / 3);
+	height: calc(var(--satellite-size) / 3);
+
+	display: block;
+
+	position: absolute;
+	top:  50%; 
+	left: 50%;
+
+    background: var(--header-color);
+	border-radius: 50%;
+
+    margin: calc(var(--satellite-size) / 6 * -1);
+	
+	transition: transform 300ms ease;
+}
+
+span.ray:nth-of-type(1) {
+	transform: 
+						rotate(60deg) 
+						translate(var(--satellite-size));
+}
+
+span.ray:nth-of-type(2) {
+	transform: 
+						rotate(120deg) 
+						translate(var(--satellite-size));
+}
+
+span.ray:nth-of-type(3) {
+	transform: 
+						rotate(180deg) 
+						translate(var(--satellite-size));
+}
+
+span.ray:nth-of-type(4) {
+	transform: 
+						rotate(240deg) 
+						translate(var(--satellite-size));
+}
+
+span.ray:nth-of-type(5) {
+	transform: 
+						rotate(300deg) 
+						translate(var(--satellite-size));
+}
+
+span.ray:nth-of-type(6) {
+	transform: 
+						rotate(0deg) 
+						translate(var(--satellite-size));
+}
+
+span.satellite.on span.ray {
+    transform: translate(0) rotate(0deg);
+}
+
+span.satellite.on span.cutout {
+    opacity: 1;
+    transform: translate(0);
+}
+
+span.satellite.on {
+    height: calc(var(--satellite-size) * 1.5);
+    width: calc(var(--satellite-size) * 1.5);
+}
