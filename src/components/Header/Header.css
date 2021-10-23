@@ -112,11 +112,11 @@ header div.menu {
         position: absolute;
         opacity: 1;
 
-        background: var(--header-contrast-color);
+        background: var(--header-color);
         height: fit-content;
         width: 50%;
 
-        border-radius: 4px;
+        border-radius: 2px;
 
         top: 8em;
         right: 0;
@@ -129,8 +129,6 @@ header div.menu {
         justify-content: flex-start;
         padding-bottom: 1rem;
 
-        transition: 300ms all ease;
-
         z-index: -1;
     }
 
@@ -142,6 +140,7 @@ header div.menu {
 
     header div.navigation > a {
         margin: 2rem;
+        color: var(--header-contrast-color);
     }
 
     header div.navigation > a::after {
@@ -149,7 +148,7 @@ header div.menu {
         position: absolute;
     
         border-radius: 1px;
-        background: var(--header-color);
+        background: var(--header-contrast-color);
     
         top: 60%;
         right: 100%;
