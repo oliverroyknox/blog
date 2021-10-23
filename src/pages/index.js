@@ -16,6 +16,7 @@ export default function IndexPage({ data }) {
           <div className="hero">
             <h1>Hey, I'm Oli. Welcome to my Blog!</h1>
           </div>
+          <h2>What's New?</h2>
             {edges.map(({ node }) => <PostCard key={node.id} {...node} /> )}
         </div>
       </div>
