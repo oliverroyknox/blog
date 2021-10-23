@@ -16,7 +16,7 @@ export default function IndexPage({ data }) {
           <div className="hero">
             <h1>Hey, I'm Oli. Welcome to my Blog!</h1>
           </div>
-            {edges.map(({ node }) => <PostCard {...node} /> )}
+            {edges.map(({ node }) => <PostCard key={node.id} {...node} /> )}
         </div>
       </div>
     </Layout>
@@ -25,7 +25,7 @@ export default function IndexPage({ data }) {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(limit: 5, sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
