@@ -12,6 +12,10 @@ span.hamburger {
     transition: 300ms all ease;
 }
 
+span.hamburger:focus {
+	outline: none;
+}
+
 span.line {
     display: block;
     position: absolute;

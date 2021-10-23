@@ -18,6 +18,10 @@ span.satellite {
     display: inline-block;
 }
 
+span.satellite:focus {
+	outline: none;
+}
+
 span.cutout {
     position: absolute;
 
