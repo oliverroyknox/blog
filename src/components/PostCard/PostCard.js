@@ -8,10 +8,10 @@ export default function PostCard(props) {
       <Link to={props.frontmatter.slug}>
         <h1>{props.frontmatter.title}</h1>
         <p>
-            <strong>
+          <strong>
             {props.frontmatter.date} - {props.timeToRead}{" "}
-            {props.timeToRead > 1 ? "minutes" : "minute"}
-            </strong>
+            {props.timeToRead > 1 ? "minutes" : "minute"} read
+          </strong>
         </p>
       </Link>
     </div>

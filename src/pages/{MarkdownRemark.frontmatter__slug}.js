@@ -4,9 +4,14 @@ import Layout from "../components/Layout/Layout";
 
 export default function ArticlePage({data}) {
     const { markdownRemark } = data;
-    const { html } = markdownRemark;
+    const { html, timeToRead, frontmatter } = markdownRemark;
 
-    useEffect(() => { injectTableMetadata() }, []);
+    useEffect(() => { injectTableMetadata(); injectTagline() }, []);
+
+    function injectTagline() {
+      const header = document.querySelector("h1");
+      header.insertAdjacentHTML("afterend", `<p><strong>${frontmatter.date} - ${timeToRead} ${timeToRead > 1 ? "minutes" : "minute"} read</strong></p>`);
+    }
 
     /**
      * Injects metadata to markdown generated tables for use in responsive layout.
@@ -46,8 +51,10 @@ export const pageQuery = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
+      timeToRead
       frontmatter {
         slug
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
