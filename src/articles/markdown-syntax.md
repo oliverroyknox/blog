@@ -1,5 +1,5 @@
 ---
-slug: "posts/markdown-syntax"
+slug: "/posts/markdown-syntax"
 date: "2021-10-16"
 title: "Markdown Syntax"
 ---

@@ -1,5 +1,5 @@
 ---
-slug: "posts/images"
+slug: "/posts/images"
 date: "2021-10-12"
 title: "A Collection of Cool Images"
 ---
