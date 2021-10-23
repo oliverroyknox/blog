@@ -122,7 +122,7 @@ table tr:last-child td {
         float: left;
         color: var(--header-color);
         font-weight: bold;
-        margin-right: 3rem;
+        margin-right: 1rem;
     }
 }
 
