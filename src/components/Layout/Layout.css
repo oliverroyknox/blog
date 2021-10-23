@@ -143,7 +143,7 @@ div.hero {
     height: 20vh;
     width: 100%;
 
-    padding-bottom: 4rem;
+    padding: 5rem 0 4rem;
 }
 
 div.hero h1 {

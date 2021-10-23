@@ -1,6 +1,5 @@
 header {
     height: 8em;
-    margin-bottom: 4rem;
 
     position: relative;
     z-index: 2;
@@ -80,18 +79,18 @@ header .navigation > a::after {
     z-index: -1;
 }
 
-header .navigation a:hover {
+header .navigation a:hover, header .navigation > a[aria-current="page"]::after {
     color: var(--header-color);
 }
 
-header .navigation > a:hover::after {
+header .navigation > a:hover::after, header .navigation > a[aria-current="page"]::after {
     right: -25%;
     left: -25%;
 
     transform: rotate(2deg) translate(0, 1rem);
 }
 
-header .navigation > a:nth-of-type(2n):hover::after {
+header .navigation > a:nth-of-type(2n):hover::after, header .navigation > a[aria-current="page"]:nth-of-type(2)::after {
     transform: rotate(-2deg) translate(0, 1rem);
 }
 
@@ -140,6 +139,10 @@ header div.menu {
 
     header div.navigation > a {
         margin: 2rem;
+        color: var(--header-contrast-color);
+    }
+
+    header div.navigation > a:hover {
         color: var(--header-contrast-color);
     }
 
