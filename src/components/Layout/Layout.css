@@ -1,3 +1,7 @@
+main {
+    padding-bottom: 2rem;
+}
+
 div.flex-container {
     display: flex;
     flex-direction: column;
@@ -47,17 +51,6 @@ hr {
     border-radius: 2px;
 
     /* margin-bottom: 4rem; */
-}
-
-a,
-a:visited {
-  color: rgb(0, 122, 255);
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: rgb(0, 142, 255);
 }
 
 table {
@@ -140,4 +133,45 @@ li {
 
 .gatsby-highlight {
     margin: 1rem;
+}
+
+div.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20vh;
+    width: 100%;
+
+    padding-bottom: 4rem;
+}
+
+div.hero h1 {
+    margin: 0;
+    margin-right: 2rem;
+
+    padding: 2rem 1rem;
+}
+
+div.hero h1::after {
+    background: var(--quaternary-color);
+    padding: 2rem 1rem;
+}
+
+ div.hero h1::after {
+    animation: slide-in 450ms ease-out forwards;
+}
+
+div.hero h1 {
+    animation: jiggle 600ms ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    from { width: 0% }
+    to { width: 100% }
+}
+
+@keyframes jiggle {
+    25% { transform: rotate(0.5deg) }
+    75% { transform: rotate(-0.5deg) }
 }

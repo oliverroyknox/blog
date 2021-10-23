@@ -1,0 +1,67 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    text-align: left;
+
+    position: relative;
+
+    height: 100%;
+
+    padding: 0 3rem 0 2rem;
+
+    margin: 3rem 0;
+
+    color: var(--header-contrast-color);
+}
+
+div.card::before {
+    content: "";
+    background: var(--header-color);
+    transform: rotate(-1deg);
+    z-index: -2;
+    position: absolute;
+    border-radius: 1px;
+
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    transition: all 300ms ease;
+}
+
+div.card:nth-of-type(2n)::before {
+    transition: 300ms ease all;
+    transform: rotate(-0.5deg);
+}
+
+div.card:nth-of-type(2n + 1)::before {
+    transition: 300ms ease all;
+    transform: rotate(0.5deg);
+}
+
+div.card:nth-of-type(2n):hover::before {
+    transform: rotate(0deg);
+}
+
+div.card:nth-of-type(2n + 1):hover::before {
+    transform: rotate(0deg);
+}
+
+.card h1 {
+    width: auto;
+}
+
+.card p {
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--header-contrast-color);
+}

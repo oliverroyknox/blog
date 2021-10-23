@@ -1,5 +1,7 @@
 ---
-slug: "typography"
+slug: "posts/typography"
+date: "2020-05-02"
+title: "Typography Guide"
 ---
 
 # Header 1

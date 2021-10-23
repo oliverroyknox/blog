@@ -1,7 +1,7 @@
 .light {
     --background-color: rgb(255, 255, 255);
 
-    --header-color: rgb(37, 37, 43);
+    --header-color: rgb(44, 45, 49);
     --header-contrast-color: rgb(241,241,241);
 
     --text-color: rgb(56, 58, 66);
@@ -13,12 +13,12 @@
 }
 
 .dark {
-    --background-color: rgb(35, 37, 45);
+    --background-color: rgb(25, 25, 29);
 
-    --header-color: rgb(228, 238, 255);
-    --header-contrast-color: rgb(45,49,57);
+    --header-color: rgb(241,241,241);
+    --header-contrast-color: rgb(44, 45, 49);
 
-    --text-color: rgb(188, 196, 209);
+    --text-color: rgb(214, 214, 214);
 
     --primary-color: rgb(247,0,103);
     --secondary-color: rgb(0,110,255);
