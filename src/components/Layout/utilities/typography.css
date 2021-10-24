@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
 
 h1,
 h2,
@@ -12,25 +12,32 @@ h3 {
     position: relative;
 }
 
-h1::before, 
+h1::before,
 h1::after,
-h2::before, 
-h2::after, 
-h3::before, 
+h2::before,
+h2::after,
+h3::before,
 h3::after {
     content: "";
     position: absolute;
     border-radius: 1px;
 }
 
-h1::before, h1::after, h2::before, h2::after, h3::before, h3::after {
+h1::before,
+h1::after,
+h2::before,
+h2::after,
+h3::before,
+h3::after {
     top: -0.5rem;
     left: -1rem;
     bottom: -0.5rem;
     right: -1rem;
 }
 
-h1::before, h2::before, h3::before {
+h1::before,
+h2::before,
+h3::before {
     background: var(--header-contrast-color);
     transform: rotate(-1deg);
     z-index: -1;
@@ -38,11 +45,15 @@ h1::before, h2::before, h3::before {
     transition: all 300ms ease;
 }
 
-h1:hover::before, h2:hover::before, h3:hover::before {
+h1:hover::before,
+h2:hover::before,
+h3:hover::before {
     transform: rotate(-1.5deg);
 }
 
-h1::after, h2::after, h3::after {
+h1::after,
+h2::after,
+h3::after {
     transform: rotate(-1.5deg) translate(1.25rem, 0.75rem);
     z-index: -2;
 
@@ -50,7 +61,7 @@ h1::after, h2::after, h3::after {
 }
 
 h1::after {
-    background: var(--primary-color)
+    background: var(--primary-color);
 }
 
 h2::after {
@@ -61,7 +72,9 @@ h3::after {
     background: var(--tertiary-color);
 }
 
-h1:hover::after, h2:hover::after, h3:hover::after  {
+h1:hover::after,
+h2:hover::after,
+h3:hover::after {
     transform: rotate(-1deg) translate(1rem, 0.5rem);
 }
 
@@ -100,7 +113,8 @@ table tr th {
         font-size: 1.75rem;
     }
 
-    h3, table tr th {
+    h3,
+    table tr th {
         font-size: 1.125rem;
     }
 }
@@ -114,7 +128,8 @@ table tr th {
         font-size: 2rem;
     }
 
-    h3, table tr th {
+    h3,
+    table tr th {
         font-size: 1.5rem;
     }
 }

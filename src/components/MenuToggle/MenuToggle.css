@@ -6,14 +6,14 @@
 span.hamburger {
     width: var(--hamburger-width);
     height: calc(var(--hamburger-width) * 0.75);
-    
+
     position: relative;
     cursor: pointer;
     transition: 300ms all ease;
 }
 
 span.hamburger:focus {
-	outline: none;
+    outline: none;
 }
 
 span.line {
@@ -35,7 +35,8 @@ span.line:nth-of-type(1) {
     top: calc(var(--hamburger-width) * 0);
 }
 
-span.line:nth-of-type(2), span.line:nth-of-type(3) {
+span.line:nth-of-type(2),
+span.line:nth-of-type(3) {
     top: calc(var(--hamburger-width) * 0.33);
 }
 

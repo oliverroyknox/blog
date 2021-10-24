@@ -1,7 +1,7 @@
 import React from "react";
 import "./MenuToggle.css";
 
-export default function MenuToggle({ignore}) {
+export default function MenuToggle({ ignore }) {
     if (!ignore) ignore = [];
     ignore.push("hamburger", "line");
 
@@ -34,7 +34,7 @@ export default function MenuToggle({ignore}) {
             document.removeEventListener("click", closeHandle);
             document.removeEventListener("scroll", closeHandle);
         }
-    }
+    };
 
     return (
         <span id="hamburger" className="hamburger" onClick={toggle} onKeyDown={toggle} role="button" tabIndex={-1}>

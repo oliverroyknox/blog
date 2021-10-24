@@ -2,7 +2,7 @@ import React from "react";
 import "./ThemeToggle.css";
 
 export default function ThemeToggle() {
-    const toggle = (e) => { 
+    const toggle = e => {
         e.stopPropagation();
 
         document.getElementById("satellite").classList.toggle("on");
@@ -14,7 +14,7 @@ export default function ThemeToggle() {
 
         rootClassList.add("transition");
         setTimeout(() => rootClassList.remove("transition"), 301);
-    }
+    };
 
     return (
         <span id="satellite" className="satellite" onClick={toggle} onKeyDown={toggle} role="button" tabIndex={0}>
@@ -24,7 +24,7 @@ export default function ThemeToggle() {
             <span className="ray" />
             <span className="ray" />
             <span className="ray" />
-            <span className="cutout" />            
+            <span className="cutout" />
         </span>
-    )
+    );
 }
