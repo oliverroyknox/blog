@@ -1,28 +1,29 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
-  "private": false,
-  "description": "A development blog to host statically generated articles, regarding my future projects.",
-  "author": "Oliver Knox",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop -H 0.0.0.0",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "gatsby": "^3.14.2",
-    "gatsby-plugin-sass": "^4.14.0",
-    "gatsby-remark-prismjs": "^5.11.0",
-    "gatsby-source-filesystem": "^3.14.0",
-    "gatsby-transformer-remark": "^4.11.0",
-    "prismjs": "^1.25.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sass": "^1.43.2"
-  }
+    "name": "blog",
+    "version": "1.0.0",
+    "private": false,
+    "description": "A development blog to host statically generated articles, regarding my future projects.",
+    "author": "Oliver Knox",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "develop": "gatsby develop -H 0.0.0.0",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "prod": "npm install & gatsby build"
+    },
+    "dependencies": {
+        "gatsby": "^3.14.2",
+        "gatsby-plugin-sass": "^4.14.0",
+        "gatsby-remark-prismjs": "^5.11.0",
+        "gatsby-source-filesystem": "^3.14.0",
+        "gatsby-transformer-remark": "^4.11.0",
+        "prismjs": "^1.25.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "sass": "^1.43.2"
+    }
 }
