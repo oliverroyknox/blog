@@ -13,7 +13,7 @@
         "build": "gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
-        "prod": "npm install & gatsby build"
+        "prod": "npm install && gatsby build"
     },
     "dependencies": {
         "gatsby": "^3.14.2",
