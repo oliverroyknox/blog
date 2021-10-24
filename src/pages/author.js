@@ -15,7 +15,7 @@ export default function AuthorPage() {
             </div>
             <div className="avatar-wrapper">
               <div className="avatar">
-                <img src={profile} alt="Profile Picture" />
+                <img src={profile} alt="Oliver cuddling his dog" />
               </div>
             </div>
             <br/>
