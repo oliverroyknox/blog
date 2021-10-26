@@ -28,11 +28,13 @@ export default function MenuToggle({ ignore }) {
         function addHandles() {
             document.addEventListener("click", closeHandle);
             document.addEventListener("scroll", closeHandle);
+            window.addEventListener("resize", closeHandle);
         }
 
         function removeHandles() {
             document.removeEventListener("click", closeHandle);
             document.removeEventListener("scroll", closeHandle);
+            window.removeEventListener("resize", closeHandle);
         }
     };
 
