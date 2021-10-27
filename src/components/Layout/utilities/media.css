@@ -15,11 +15,19 @@ img {
     img {
         height: 512px;
     }
+
+    div.avatar {
+        max-width: 512px !important;
+    }
 }
 
 @media screen and (min-height: 1280px) {
     img {
         height: 700px;
+    }
+
+    div.avatar {
+        max-width: 700px !important;
     }
 }
 
@@ -28,7 +36,7 @@ div.avatar-wrapper {
 }
 
 div.avatar {
-    max-width: 700px;
+    max-width: 256px;
     margin: auto auto 4rem;
 
     transform: rotate(1deg);
