@@ -66,7 +66,7 @@ By defining our classes on our `html` element it is still accessible by all the 
 
 ## The Toggle
 
-Next up, we need to create a toggle to switch between our themes. You may have noticed the one at the top of the site, I'd encourage you to have a play and take some inspiration from it. I'll discuss how I created mine and list some other ones I absolutely love.
+Next up, we need to create a toggle to switch between our themes. You may have noticed the one at the top of the site, I'd encourage you to have a play and take some inspiration from it.
 
 ### Marking it Up
 
@@ -276,3 +276,7 @@ function toggle() {
 ```
 
 This ensures when we `toggle` dark mode, we transition all elements gradually from one theme to the next. I think it's a nice finishing touch to make the toggle feel that much smoother!
+
+## Expanding our Code
+
+There's an almost limitless amount of tweaks we can make to improve the dark mode toggle. I am writing this blog at the time of it's initial creation and I'm sure over time it will be iterated on, so feel free to check out the source code for this blog on my [GitHub](https://github.com/oliverroyknox/blog) page and see the latest versions. I also encourage you to try this out and improve it to find what you want your unique `toggle` to look like. I'm sure you can come up with some creative toggle's that really enhance your site!
