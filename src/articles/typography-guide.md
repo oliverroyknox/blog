@@ -1,8 +1,10 @@
 ---
-slug: "/posts/typography"
-date: "2020-05-02"
+slug: "/posts/typography-guide"
+date: "2021-10-01"
 title: "Typography Guide"
 ---
+
+# Typography Guide
 
 # Header 1
 
@@ -14,11 +16,11 @@ title: "Typography Guide"
 
 Regular
 
-*Italic*
+_Italic_
 
 **Bold**
 
-***Bold Italic***
+**_Bold Italic_**
 
 `code snippet`
 
