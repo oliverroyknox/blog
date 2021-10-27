@@ -1,32 +1,41 @@
 header {
-    height: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     position: relative;
+    height: 8em;
+    width: 100%;
+
+    background-color: var(--background-color);
+
     z-index: 2;
 }
 
-header .flex-container {
+header > div.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     height: 100%;
+    width: 84%;
+
+    padding-left: 1.25rem;
 
     background-color: var(--background-color);
 }
 
 @media screen and (min-width: 1024px) {
-    header div.flex-container > div.flex-content {
-        max-width: 77%;
+    header > div.content {
+        width: 77%;
     }
 }
 
 @media screen and (min-width: 2048px) {
-    header div.flex-container > div.flex-content {
-        max-width: 55%;
+    header > div.content {
+        width: 55%;
     }
-}
-
-header .flex-container .flex-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 header h2.title {
@@ -123,7 +132,7 @@ header div.menu {
         top: 8em;
         right: 0;
         bottom: 0;
-        left: 45%;
+        left: 43.5%;
 
         transform: translate(0, calc(100% * -1));
 

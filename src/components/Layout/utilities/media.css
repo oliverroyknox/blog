@@ -1,0 +1,74 @@
+/* 
+ *	A CSS utility file to style HTML media elements.
+ */
+
+img {
+    width: 100%;
+    height: 256px;
+
+    border-radius: 4px;
+
+    object-fit: cover;
+}
+
+@media screen and (min-height: 1024px) {
+    img {
+        height: 512px;
+    }
+
+    div.avatar {
+        max-width: 512px !important;
+    }
+}
+
+@media screen and (min-height: 1280px) {
+    img {
+        height: 700px;
+    }
+
+    div.avatar {
+        max-width: 700px !important;
+    }
+}
+
+div.avatar-wrapper {
+    margin: 1rem 0 4rem 1rem;
+}
+
+div.avatar {
+    max-width: 256px;
+    margin: auto auto 4rem;
+
+    transform: rotate(1deg);
+
+    transition: all 300ms ease;
+}
+
+div.avatar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    border-radius: 1px;
+    background: var(--quaternary-color);
+
+    transform: rotate(-1.5deg) translate(-1rem, -1rem);
+    z-index: -2;
+
+    transition: all 300ms ease;
+}
+
+div.avatar:hover {
+    transform: rotate(0);
+}
+
+div.avatar:hover::after {
+    transform: translate(-1rem, -0.5rem);
+}
+
+div.avatar > img {
+    border-radius: 1px;
+}

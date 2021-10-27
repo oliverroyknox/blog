@@ -1,265 +1,32 @@
-main {
-    padding-bottom: 2rem;
-}
+@import url("utilities/typography.css");
+@import url("utilities/data.css");
+@import url("utilities/media.css");
 
-div.flex-container {
+/*
+ * A CSS file to control the layout of HTML elements.
+ */
+
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding-bottom: 2rem; /* TODO: replace with footer of default size */
 }
 
-div.flex-container > div.flex-content {
+main > div.content {
     width: 88%;
 }
 
-@media screen and (min-width: 1024px) {
-    div.flex-container > div.flex-content {
-        max-width: 66%;
+@media screen and (min-width: 1376px) {
+    main > div.content {
+        width: 66%;
     }
 }
 
 @media screen and (min-width: 2048px) {
-    div.flex-container > div.flex-content {
-        max-width: 44%;
+    main > div.content {
+        width: 44%;
     }
-}
-
-img {
-    width: 100%;
-    height: 256px;
-
-    border-radius: 4px;
-
-    object-fit: cover;
-}
-
-@media screen and (min-height: 1024px) {
-    img {
-        height: 512px;
-    }
-}
-
-@media screen and (min-height: 1280px) {
-    img {
-        height: 700px;
-    }
-}
-
-hr {
-    border: 1px solid var(--text-color);
-    border-radius: 2px;
-
-    /* margin-bottom: 4rem; */
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 0;
-
-    margin: 1rem;
-
-    width: calc(100% - 2rem);
-
-    overflow-x: scroll;
-    text-overflow: clip;
-    white-space: nowrap;
-}
-
-table th,
-table td {
-    padding: 0.5rem;
-    text-align: left;
-}
-
-table tr td {
-    border-left: 4px solid var(--quaternary-color);
-}
-
-table tr:first-child td {
-    border-top-left-radius: 4px;
-}
-
-table tr:last-child td {
-    border-bottom-left-radius: 4px;
-}
-
-@media screen and (max-width: 600px) {
-    table thead {
-        display: none;
-    }
-
-    table tr {
-        display: block;
-        margin-bottom: 2rem;
-    }
-
-    table tr td {
-        display: block;
-        text-align: right;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        word-break: keep-all;
-    }
-
-    table tr:first-child td,
-    table tr:last-child td {
-        border-radius: 0;
-    }
-
-    table tr td:first-child {
-        border-top-left-radius: 4px;
-    }
-
-    table tr td:last-child {
-        border-bottom-left-radius: 4px;
-    }
-
-    table tr td::before {
-        /*
-        aria-label has no advantage, it won't be read inside a table. 
-        content: attr(aria-label);
-    */
-        content: attr(data-label);
-        float: left;
-        color: var(--header-color);
-        font-weight: bold;
-        margin-right: 1rem;
-    }
-}
-
-ul {
-    list-style-type: "❍ ";
-    list-style-position: inside;
-}
-
-li {
-    line-height: 1.75rem;
-}
-
-.gatsby-highlight {
-    margin: 1rem;
-}
-
-div.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 20vh;
-    width: 100%;
-
-    padding: 5rem 0 4rem;
-}
-
-div.hero h1 {
-    margin: 0;
-    margin-right: 2rem;
-
-    padding: 2rem 1rem;
-}
-
-div.hero h1::after {
-    background: var(--quaternary-color);
-    padding: 2rem 1rem;
-}
-
-div.hero h1::after {
-    animation: slide-in 450ms ease-out forwards;
-}
-
-div.hero h1 {
-    animation: jiggle 600ms ease-in-out forwards;
-}
-
-div.hero h2 {
-    margin: 0;
-    margin-bottom: 4rem;
-    margin-right: 1rem;
-    padding: 1rem 0.5rem;
-
-    animation: jiggle 600ms ease-in-out forwards;
-}
-
-div.hero h2::after {
-    background: var(--primary-color);
-    animation: slide-in 450ms ease-out forwards;
-
-    padding: 1rem 0.75rem;
-}
-
-@keyframes slide-in {
-    from {
-        width: 0%;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes jiggle {
-    25% {
-        transform: rotate(0.5deg);
-    }
-    75% {
-        transform: rotate(-0.5deg);
-    }
-}
-
-div.avatar-wrapper {
-    margin-left: 1rem;
-}
-
-div.avatar {
-    max-width: 512px;
-    margin: auto;
-    transform: rotate(1deg);
-
-    transition: all 300ms ease;
-
-    margin-bottom: 4rem;
-}
-
-div.avatar::after {
-    content: "";
-    position: absolute;
-
-    border-radius: 1px;
-    background: var(--quaternary-color);
-
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
-    transform: rotate(-1.5deg) translate(-1rem, -1rem);
-    z-index: -2;
-
-    transition: all 300ms ease;
-}
-
-div.avatar:hover {
-    transform: rotate(0);
-}
-
-div.avatar:hover::after {
-    transform: translate(-1rem, -0.5rem);
-}
-
-div.avatar img {
-    border-radius: 1px;
-}
-
-a {
-    text-decoration: underline;
-    color: var(--text-color);
-
-    transition: all 300ms ease;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-    color: var(--header-color);
 }

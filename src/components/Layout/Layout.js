@@ -1,8 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
-import "./utilities/typography.css";
-import "./utilities/prism-one-light.scss";
 import "./utilities/prism-one-dark.scss";
+import "./utilities/prism-one-light.scss";
 import "./Layout.css";
 
 export default function Layout({ children }) {

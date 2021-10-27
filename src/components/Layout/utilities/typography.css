@@ -12,6 +12,27 @@ h3 {
     position: relative;
 }
 
+h1 {
+    font-weight: 600;
+    font-size: 1.75rem;
+
+    margin: 4rem 1rem 3rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    margin: 6rem 1rem 2rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 1.1125rem;
+
+    margin: 3rem 2rem 2rem;
+}
+
 h1::before,
 h1::after,
 h2::before,
@@ -78,27 +99,6 @@ h3:hover::after {
     transform: rotate(-1deg) translate(1rem, 0.5rem);
 }
 
-h1 {
-    font-weight: 600;
-    font-size: 1.75rem;
-
-    margin: 4rem 1rem 3rem;
-}
-
-h2 {
-    font-weight: 600;
-    font-size: 1.125rem;
-
-    margin: 6rem 1rem 2rem;
-}
-
-h3 {
-    font-weight: 500;
-    font-size: 1.1125rem;
-
-    margin: 3rem 2rem 2rem;
-}
-
 table tr th {
     color: var(--header-color);
     font-size: 1.1125rem;
@@ -134,18 +134,95 @@ table tr th {
     }
 }
 
+div.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 20vh;
+    width: 100%;
+
+    padding: 5rem 0 4rem;
+}
+
+div.hero > h1 {
+    margin: 0 1.5rem 0 0;
+    padding: 2rem 1rem;
+
+    animation: jiggle 600ms ease-in-out forwards;
+}
+
+div.hero > h1::after {
+    background: var(--quaternary-color);
+    padding: 2rem 1rem;
+
+    animation: slide-in 450ms ease-out forwards;
+}
+
+div.hero h2 {
+    margin: 0 1rem 0 0;
+    padding: 1rem 0.5rem;
+
+    animation: jiggle 600ms ease-in-out forwards;
+}
+
+div.hero h2::after {
+    background: var(--primary-color);
+    padding: 1rem 0.75rem;
+
+    animation: slide-in 450ms ease-out forwards;
+}
+
+@keyframes slide-in {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes jiggle {
+    25% {
+        transform: rotate(0.5deg);
+    }
+    75% {
+        transform: rotate(-0.5deg);
+    }
+}
+
 p {
     display: block;
     flex-direction: column;
+
     margin: 0 1rem;
 
     line-height: 1.75rem;
 }
 
-h1 + p {
+h1 ~ p#tagline {
     margin-bottom: 4rem;
 }
 
-h3 + p {
+h3 ~ p {
     margin: 0 2rem;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--text-color);
+
+    transition: color 300ms ease;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--header-color);
+}
+
+hr {
+    border: 1px solid var(--text-color);
+    border-radius: 2px;
 }

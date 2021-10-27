@@ -33,7 +33,7 @@ export default function ArticlePage({ data }) {
          * Injects dynamic attributes to table for use in responsive layout.
          */
         function injectTableMetadata() {
-            const tables = document.querySelectorAll(".flex-content table");
+            const tables = document.querySelectorAll(".content table");
 
             tables.forEach(table => {
                 const headers = table.getElementsByTagName("th");
@@ -57,9 +57,7 @@ export default function ArticlePage({ data }) {
 
     return (
         <Layout>
-            <div className="flex-container">
-                <div className="flex-content" dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
+            <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
         </Layout>
     );
 }

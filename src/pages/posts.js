@@ -9,13 +9,11 @@ export default function PostsPage({ data }) {
 
     return (
         <Layout>
-            <div className="flex-container">
-                <div className="flex-content">
-                    <h2>Here's What I've Got!</h2>
-                    {edges.map(({ node }) => (
-                        <PostCard key={node.id} {...node} />
-                    ))}
-                </div>
+            <div className="content">
+                <h2>Here's What I've Got!</h2>
+                {edges.map(({ node }) => (
+                    <PostCard key={node.id} {...node} />
+                ))}
             </div>
         </Layout>
     );

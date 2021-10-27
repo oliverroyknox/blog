@@ -28,16 +28,18 @@ export default function MenuToggle({ ignore }) {
         function addHandles() {
             document.addEventListener("click", closeHandle);
             document.addEventListener("scroll", closeHandle);
+            window.addEventListener("resize", closeHandle);
         }
 
         function removeHandles() {
             document.removeEventListener("click", closeHandle);
             document.removeEventListener("scroll", closeHandle);
+            window.removeEventListener("resize", closeHandle);
         }
     };
 
     return (
-        <span id="hamburger" className="hamburger" onClick={toggle} onKeyDown={toggle} role="button" tabIndex={-1}>
+        <span id="hamburger" className="hamburger" onClick={toggle} onKeyDown={toggle} role="button" tabIndex={-1} aria-label="Menu Toggle">
             <span className="line" />
             <span className="line" />
             <span className="line" />

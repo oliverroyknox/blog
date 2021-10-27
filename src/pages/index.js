@@ -11,16 +11,14 @@ export default function IndexPage({ data }) {
 
     return (
         <Layout>
-            <div className="flex-container">
-                <div className="flex-content">
-                    <div className="hero">
-                        <h1>Hey, I'm Oli. Welcome to my Blog!</h1>
-                    </div>
-                    <h2>What's New?</h2>
-                    {edges.map(({ node }) => (
-                        <PostCard key={node.id} {...node} />
-                    ))}
+            <div className="content">
+                <div className="hero">
+                    <h1>Hey, I'm Oli. Welcome to my Blog!</h1>
                 </div>
+                <h2>What's New?</h2>
+                {edges.map(({ node }) => (
+                    <PostCard key={node.id} {...node} />
+                ))}
             </div>
         </Layout>
     );

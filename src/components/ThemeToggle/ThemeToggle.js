@@ -17,7 +17,7 @@ export default function ThemeToggle() {
     };
 
     return (
-        <span id="satellite" className="satellite" onClick={toggle} onKeyDown={toggle} role="button" tabIndex={0}>
+        <span id="satellite" className="satellite" onClick={toggle} onKeyDown={toggle} role="button" tabIndex={0} aria-label="Theme Toggle">
             <span className="ray" />
             <span className="ray" />
             <span className="ray" />
