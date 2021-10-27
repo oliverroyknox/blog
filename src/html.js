@@ -3,9 +3,16 @@ import PropTypes from "prop-types";
 
 export default function HTML(props) {
     return (
-        <html {...props.htmlAttributes}>
+        <html {...props.htmlAttributes} lang="en-GB">
             <head>
+                <title>Oli's Blog</title>
                 <meta charSet="utf-8" />
+                <meta
+                    name="description"
+                    content="Oli's blog about web technology and development. Take a look at some of my posts to see if you can find any inspiration for your own projects!"
+                />
+                <meta name="keywords" content="HTML, CSS, Javascript, Typescript, Node, Web, Develop, Tutorials" />
+                <meta name="author" content="Oliver Roy Knox" />
                 <meta httpEquiv="x-ua-compatible" content="ie=edge" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
                 {props.headComponents}

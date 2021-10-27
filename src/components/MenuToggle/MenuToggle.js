@@ -39,7 +39,7 @@ export default function MenuToggle({ ignore }) {
     };
 
     return (
-        <span id="hamburger" className="hamburger" onClick={toggle} onKeyDown={toggle} role="button" tabIndex={-1}>
+        <span id="hamburger" className="hamburger" onClick={toggle} onKeyDown={toggle} role="button" tabIndex={-1} aria-label="Menu Toggle">
             <span className="line" />
             <span className="line" />
             <span className="line" />
