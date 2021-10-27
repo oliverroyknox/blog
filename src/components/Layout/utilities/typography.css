@@ -146,7 +146,7 @@ div.hero {
 }
 
 div.hero > h1 {
-    margin: 0 2rem 0 0;
+    margin: 0 1.5rem 0 0;
     padding: 2rem 1rem;
 
     animation: jiggle 600ms ease-in-out forwards;
