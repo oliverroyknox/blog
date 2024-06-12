@@ -1,0 +1,17 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "SYXCG3PXMW.com.wallst.apps.tdwuk",
+                    "SYXCG3PXMW.uk.co.ii.mobile.beta"
+                ],
+                "components": [
+                    {
+                        "/": "/open-banking/pay-by-bank/callback"
+                    }
+                ]
+            }
+        ]
+    }
+}
